@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>D3.js Realtime Visualizations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>✨ Real-Time Data Visualization with D3.js</h1>
+    </header>
+
+    <section>
+        <h2>📈 Top 5 COVID-19 Countries (Realtime)</h2>
+        <div id="numerical"></div>
+    </section>
+
+    <section>
+        <h2>📺 Interactive World Map</h2>
+        <div id="spatial"></div>
+    </section>
+
+    <section>
+        <h2>💬 Word Frequency (Filtered)</h2>
+        <div class="filter">
+            <label for="filterSelect">Filter words with count ≥ </label>
+            <select id="filterSelect">
+                <option value="0">0</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <div id="textual"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
